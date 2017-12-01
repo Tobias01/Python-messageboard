@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Result</title>
+</head>
+<body>
+    You searched for: {{searchtext}}
+    <h2>results</h2>
+
+    <ul>
+        {% for searchresult in searchresults %}
+        <li>{{searchresult}}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MessageDetails</title>
+
+    <link rel="stylesheet" href="/assets/css/style3.css">
+</head>
+<body>
+
+    <h1 class="heading">Message info</h1>
+    <p>⇾ Message ID: {{ message.key.id() }}</p>
+    <form method="post" action="edit-message">⇾ Text: <input value="{{ message.message_text }}"> <button>Speichern</button></form>
+    <p>⇾ Date: {{ message.created }}</p>
+
+    <form action="http://localhost:8080/messageboard">
+    <input type="submit" value="⇾ Zurück zum Start">
+    </form>
+
+</body>
+</html>

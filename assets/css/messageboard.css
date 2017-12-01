@@ -1,0 +1,20 @@
+.message {
+    font-size: 30px;
+}
+
+.heading {
+    color: red;
+    font-size: 30px;
+    font-family: sans-serif;
+    border: 2px solid darkred;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: darkred;
+    box-shadow: 5px 5px 50px darkred;
+}
+
+body {
+    color: darkgrey;
+    font-size: 20px;
+    font-family: sans-serif;
+}

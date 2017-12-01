@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Messageboard</title>
+    <link rel="stylesheet" href="/assets/css/messageboard.css">
+</head>
+<body>
+    <h1 class="heading">Messageboard</h1>
+
+    <h1 class="list">List of all messages</h1>
+    {% for message in messages %}
+    <p><a href="/message/{{ message.key.id() }}">{{ message.message_text }}</a></p>
+    {% endfor %}
+
+    {% for message in messages %}
+        <div class="message">
+            {{message.message_text}}
+        </div>
+    {% endfor %}
+
+    <h1>Search</h1>
+    <form action="/search-message" method="post">
+        <input name="searchtext">
+    </form>
+
+    <h1>Post</h1>
+    <form action="/post-message" method="post">
+        <input name="messagetext">
+    </form>
+</body>
+</html>
